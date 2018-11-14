@@ -42,11 +42,22 @@ footer{
 
   /* TEXT */
   .text-white {
-    text-color: white;
+    color: white;
+  }
+  .text-align-right {
+    text-align: right;
   }
   .text-center {
     text-align: center;
   }
+  .text-align-left {
+    text-align: left;
+  }
+  .text-align-justify {
+    text-align: justify;
+  }
+
+  /* Link */
 
 /* IDs */
 
