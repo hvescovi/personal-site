@@ -1,0 +1,64 @@
+/* TAGs */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+footer{
+  height: 50px;
+  margin-top: -50px;
+  padding: 1em;
+}
+/* CLASSs */
+
+.english {
+  background-color: lightcyan;
+}
+
+.content {
+  min-height: calc(100% - 50px);
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+  /* COLORS */
+  .bg-color-1 {
+    background-color: #343a40;  
+  }
+  .bg-color-2 {
+    background-color: ;  
+  }
+  .bg-color-3 {
+    background-color: ;  
+  }
+  .bg-color-4 {
+    background-color: ;  
+  }
+  .bg-color-5 {
+    background-color: ;  
+  }
+
+  /* TEXT */
+  .text-white {
+    color: white;
+  }
+  .text-align-right {
+    text-align: right;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-align-left {
+    text-align: left;
+  }
+  .text-align-justify {
+    text-align: justify;
+  }
+
+  /* Link */
+
+/* IDs */
+
+

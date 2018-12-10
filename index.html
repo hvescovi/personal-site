@@ -8,39 +8,36 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Hylson.com</title>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="jquery.min.js"></script>
+  <!-- Boostrap v4.0 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Boostrap Grid -->
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <!-- Boostrap Reboot -->
+  <link rel="stylesheet" href="boostrap-reboot.min.css">
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- jQuery v3.3.1 -->
+  <script src="js/jquery3.min.js"></script>
+  <!-- Bootstrap v4.0.0 -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap v4.0.0 Bundle -->
+  <script src="js/boostrap.bundle.min.js"></script>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="bootstrap.min.js"></script>
-
-  <!-- extra -->
-  <link rel="stylesheet" href="hylson2.css">
-
+    
   <script>
-
     $(document).ready(function () {
-
       $(".mylink").on("click", function () {
         $("#thecontent").load($(this).attr("page"), function () {
-
           $(".mysublink").on("click", function () {
             $("#subcontent").load($(this).attr("page"));
             return false;
           });
-
         });
         return false;
       });
-
-
     });
-
   </script>
-
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,45 +48,74 @@
 </head>
 
 <body>
+  <div class="content">
+    <!-- HEADER -->
+    <header></header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-color-1 navbar-fixed-top">
+      <!-- <nav class="navbar navbar-inverse navbar-fixed-top"> -->
+      <div class="container">
+          <a class="navbar-brand" href="index.html">hylson.com<br /><span class="h6">2007 a 2018</span></a>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top"> -->
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">hylson.com<br /><span class="h6">2007 a 2018</span></a>
-        <a class="navbar-brand mylink" href=# page="50-personal.html">Pessoal/Personal</a>
-        <a class="navbar-brand mylink" href=# page="51-teaching.html">Ensino/Teaching</a>
-        <a class="navbar-brand mylink" href=# page="52-research.html">Pesquisa/Research</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="navbar-brand mylink" href=# page="50-personal.html">Pessoal/Personal</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand mylink" href=# page="51-teaching.html">Ensino/Teaching</a>
+              </li>
+              <li class="nav-item">
+                  <a class="navbar-brand mylink" href=# page="52-research.html">Pesquisa/Research</a>
+              </li>
+            </ul>
+        </div>
       </div>
+    </nav>
+
+
+
+    <div class="container content-inside" id="thecontent">
+    <section>
+        <!-- pages personal, teaching and research are loaded here -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Bem vindo/Welcome</h1>
+            <ul>
+              <li>
+                <a href=# class="mylink" page="50-personal.html">Pessoal/Personal</a>
+              </li>
+              <li>
+                <a href=# class="mylink" page="51-teaching.html" >Ensino/Teaching</a>
+              </li>
+              <li>
+                <a href=# clsas="mylink" page="52-research.html">Pesquisa/Research</a>
+              </li>
+              <li>
+                <a href=/public>Arquivos públicos/Public files</a>
+              </li> 
+            </ul> 
+          </div> 
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+  </div>
+  <footer class="bg-color-1 text-white">
+    <div class="row container-fluid">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <h5 class="text-center"><a href="index.html" class="text-white ">hylson.com &copy; 2007-2018</a></h5>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+        </div>
     </div>
-  </nav>
-
-  <div class="container" id="thecontent">
-
-    <!-- pages personal, teaching and research are loaded here -->
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <h1>Bem vindo/Welcome</h1>
-
-        <ul>
-          <li><a href=# class="mylink" page="50-personal.html">Pessoal/Personal</a></li>
-          <li><a href=# class="mylink" page="51-teaching.html" >Ensino/Teaching</a></li>
-          <li><a href=# clsas="mylink" page="52-research.html">Pesquisa/Research</a></li>
-          <li><a href=/public>Arquivos públicos/Public files</a> </li> 
-        </ul> 
-      </div> 
-    </div> <!-- row -->
-
-  </div> <!-- container -->
-
+  </footer>
 </body>
 </html>
