@@ -1,0 +1,10 @@
+{
+  "resumos":[
+    {
+    "indice":"hahn2016trabalho",
+    "livro":"Trabalho ordinário, graça extraordinária: a minha jornada espiritual no Opus Dei",
+    "autor":"Scott Hahn",
+    "ano":"2016",
+    "editora":"Quadrante",
+    "edição":"3",
+
