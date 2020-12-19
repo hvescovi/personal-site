@@ -1,0 +1,8 @@
+    "indice":"pereira2019eu",
+    "livro":"Eu lhes trago melhora e cura",
+    "autor":"Padre Rufus Pereira",
+    "ano":"2019",
+    "editora":"Canção Nova",
+    "edição":"1",
+    "registros": [
+
