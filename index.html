@@ -26,10 +26,10 @@
 
 
     <script>
-        $(document).ready(function() {
-            $(".mylink").on("click", function() {
-                $("#thecontent").load($(this).attr("page"), function() {
-                    $(".mysublink").on("click", function() {
+        $(document).ready(function () {
+            $(".mylink").on("click", function () {
+                $("#thecontent").load($(this).attr("page"), function () {
+                    $(".mysublink").on("click", function () {
                         $("#subcontent").load($(this).attr("page"));
                         return false;
                     });
@@ -48,6 +48,7 @@
 </head>
 
 <body>
+    
     <div class="content">
         <!-- HEADER -->
         <header></header>
@@ -57,9 +58,11 @@
             <div class="container">
                 <a class="navbar-brand" href="index.html">hylson.com<br /><span class="h6">2007 a 2021</span></a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
@@ -76,8 +79,6 @@
                 </div>
             </div>
         </nav>
-
-
 
         <div class="container content-inside" id="thecontent">
             <section>
@@ -99,18 +100,22 @@
                                 <a href=/public>Arquivos públicos/Public files</a>
                             </li>
                             <li>
-                                <a href=https://www.linkedin.com/in/hylsonnetto/ target=_blank><img src=linkedin.png width=32 border=0></a> &nbsp;
-                                <a href=https://twitter.com/hvescovi target="_blank"><img src=twitter.jpg width=30 border=0></a>
+                                <a href=https://www.linkedin.com/in/hylsonnetto/ target=_blank><img src=linkedin.png
+                                        width=32 border=0></a> &nbsp;
+                                <a href=https://twitter.com/hvescovi target="_blank"><img src=twitter.jpg width=30
+                                        border=0></a>
                             </li>
-                            <li><a href=https://sig.ifc.edu.br/sigaa/public/docente/portal.jsf?siape=1510001 target=_blank>Perfil no SIGAA</a></li>
+                            <li><a href=https://sig.ifc.edu.br/sigaa/public/docente/portal.jsf?siape=1510001
+                                    target=_blank>Perfil no SIGAA</a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- row -->
+            </section>
         </div>
         <!-- container -->
-        </section>
-    </div>
+    </div> <!-- content -->
+
     <footer class="bg-color-1 text-white">
         <div class="row container-fluid">
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
